@@ -1,0 +1,62 @@
+{
+  "skill_name": "weather",
+  "skill_md_path": "~/.openclaw/skills/weather/SKILL.md",
+  "generated_at": "2026-03-19T00:00:00Z",
+  "tests": [
+    {
+      "id": "test-001",
+      "description": "구조 — 필수 섹션 존재 여부",
+      "prompt": "/weather 서울 내일",
+      "expected_behavior": "스킬이 활성화되고 날씨 정보를 조회한다",
+      "assertions": [
+        "SKILL.md에 스킬 이름이 H1 헤딩으로 존재한다",
+        "SKILL.md에 'When to Use' 또는 '사용 시점' 섹션이 있다",
+        "SKILL.md에 'NOT for' 또는 '사용 금지' 섹션이 있다",
+        "SKILL.md에 워크플로우 또는 동작 방식이 기술되어 있다"
+      ]
+    },
+    {
+      "id": "test-002",
+      "description": "트리거 — 활성화 조건 명시",
+      "prompt": "날씨 알려줘",
+      "expected_behavior": "날씨 관련 요청을 감지하고 스킬을 활성화한다",
+      "assertions": [
+        "SKILL.md에 트리거 조건이 명확히 기술되어 있다",
+        "위치(도시/국가) 입력 처리 방법이 언급되어 있다",
+        "기본 위치(default location) 동작이 설명되어 있다"
+      ]
+    },
+    {
+      "id": "test-003",
+      "description": "출력 형식 — 날씨 정보 표현",
+      "prompt": "도쿄 날씨",
+      "expected_behavior": "온도, 날씨 상태 등을 포함한 정보를 반환한다",
+      "assertions": [
+        "출력에 온도 표시 방법이 언급되어 있다 (°C 또는 °F)",
+        "날씨 상태 표현 방식이 기술되어 있다",
+        "API 또는 데이터 소스가 명시되어 있다"
+      ]
+    },
+    {
+      "id": "test-004",
+      "description": "에러 처리 — 잘못된 위치 입력",
+      "prompt": "존재하지않는도시 날씨",
+      "expected_behavior": "위치를 찾지 못할 경우 적절히 처리한다",
+      "assertions": [
+        "위치를 찾지 못할 경우의 동작이 기술되어 있다",
+        "API 오류 시 폴백 동작이 언급되어 있다"
+      ]
+    },
+    {
+      "id": "test-005",
+      "description": "완성도 — 예시 포함 여부",
+      "prompt": "스킬 사용 예시를 보여달라",
+      "expected_behavior": "구체적인 사용 예시가 있다",
+      "assertions": [
+        "최소 1개의 사용 예시가 있다",
+        "예시에 실제 도시명이 포함되어 있다",
+        "SKILL.md 길이가 너무 길지 않다 (500단어 이하)"
+      ]
+    }
+  ]
+}
