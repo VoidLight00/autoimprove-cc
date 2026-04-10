@@ -2,6 +2,18 @@
 
 > Karpathy autoresearch loop for SKILL.md — Claude Code native implementation.
 
+## Skill Evolution (PDF)
+
+![Skill Evolution — page 1](assets/skill-evolution/page-01.png)
+![Skill Evolution — page 2](assets/skill-evolution/page-02.png)
+![Skill Evolution — page 3](assets/skill-evolution/page-03.png)
+![Skill Evolution — page 4](assets/skill-evolution/page-04.png)
+![Skill Evolution — page 5](assets/skill-evolution/page-05.png)
+![Skill Evolution — page 6](assets/skill-evolution/page-06.png)
+![Skill Evolution — page 7](assets/skill-evolution/page-07.png)
+
+(원본 PDF: [assets/skill-evolution.pdf](assets/skill-evolution.pdf))
+
 SKILL.md를 밤새 자동 개선하는 Claude Code 네이티브 시스템.
 `/autoimprove` 한 줄로 실행하면, 아침에 더 나은 스킬로 깨어납니다.
 
